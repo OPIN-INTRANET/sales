@@ -1,0 +1,9 @@
+name = search_index_questions
+core = 7.x
+package = Sales
+version = 7.x-1.0
+dependencies[] = entity
+dependencies[] = search_api
+features[features_api][] = api:2
+features[search_api_index][] = questions_answers
+project path = sites/all/modules/features

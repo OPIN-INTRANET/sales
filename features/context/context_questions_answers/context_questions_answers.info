@@ -1,0 +1,12 @@
+name = context_questions_answers
+core = 7.x
+package = Sales
+version = 7.x-1.0
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = facetapi
+dependencies[] = views
+features[context][] = question_answers
+features[ctools][] = context:context:3
+features[features_api][] = api:2
+project path = sites/all/modules/features

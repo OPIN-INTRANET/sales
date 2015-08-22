@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the context_questions_answers feature.
+ */
+
+include_once 'context_questions_answers.features.inc';

@@ -1,0 +1,8 @@
+name = field_question_section
+core = 7.x
+package = Sales
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[field_base][] = field_question_section
+features[taxonomy][] = question_section

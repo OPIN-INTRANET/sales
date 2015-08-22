@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the search_index_questions feature.
+ */
+
+include_once 'search_index_questions.features.inc';

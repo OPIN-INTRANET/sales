@@ -1,0 +1,7 @@
+name = field_question_answers
+core = 7.x
+package = Sales
+dependencies[] = entityreference
+dependencies[] = features
+features[features_api][] = api:2
+features[field_base][] = field_question_answers

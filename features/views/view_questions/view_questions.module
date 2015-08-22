@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the view_questions feature.
+ */
+
+include_once 'view_questions.features.inc';
