@@ -13,6 +13,27 @@ function content_type_answer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_node_answer';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_answer'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_answer';
+  $strongarm->value = '[node:content-type] - [node:nid]';
+  $export['auto_entitylabel_pattern_node_answer'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_answer';
+  $strongarm->value = 0;
+  $export['auto_entitylabel_php_node_answer'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_answer';
   $strongarm->value = 0;
   $export['comment_anonymous_answer'] = $strongarm;
@@ -80,6 +101,9 @@ function content_type_answer_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -127,14 +151,14 @@ function content_type_answer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_answer';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_answer'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_answer';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_answer'] = $strongarm;
 
   return $export;

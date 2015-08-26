@@ -3,21 +3,18 @@ core = 7.x
 package = Sales
 
 ; Contributed Modules
+dependencies[] = auto_entitylabel
 dependencies[] = votingapi
 
 ; Components
 dependencies[] = common
 dependencies[] = content_type_answer
 dependencies[] = content_type_question
-dependencies[] = context_questions_answers
 dependencies[] = field_answer_tags
 dependencies[] = field_question_answers
 dependencies[] = field_question_section
 dependencies[] = field_question_tags
 dependencies[] = search_index_questions
-dependencies[] = view_answers
-dependencies[] = view_question_answer
-dependencies[] = view_questions
 
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

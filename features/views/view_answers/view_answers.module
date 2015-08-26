@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the view_answers feature.
- */
-
-include_once 'view_answers.features.inc';
