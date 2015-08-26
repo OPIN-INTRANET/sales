@@ -4,6 +4,7 @@ package = Sales
 
 ; Contributed Modules
 dependencies[] = auto_entitylabel
+dependencies[] = token
 dependencies[] = votingapi
 
 ; Components
